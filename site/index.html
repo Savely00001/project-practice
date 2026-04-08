@@ -1,19 +1,239 @@
+<html>
+<head>
+    <title>Проектная практика</title>
+    <style type='text/css'>
+        
+        body {
+            width: 100%;
+            margin: 0 auto;
+        }
+        header > nav > ul > li > a {
+            text-decoration: none;
+            color: #111827;
+        }
+        header > nav > ul > li {
+            list-style: none;
+            display: inline;
+            padding: 1em;
+            font-size: 140%;
+        }
+        header {
+            align-items: center;
+            display: flex;
+            padding: 2%;
+            background-color: #ffffff;
+        }
+        header > h1 {
+            padding-left: 3%;
+        }
+        nav {
+            padding-left: 25%;
+        }
+        header > nav > ul > li > a:hover {
+            color: #3B82F6;
+        }
+        #main > a {
+            color: #3B82F6;
+        }
+        article {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;  
+            align-items: center;
+            padding: 5%;
+            text-align: left;
+            background-color: #3B82F6;
+        }
+        article > .im > p {
+            font-size: 20px;
+            color: #ffffff;
+        }
+        .mainblock {
+            padding-top: 2%;
+            padding-bottom: 5%;
+            display: flex;
+            gap: 100px;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .block {
+            padding: 2em;
+            text-align: left;
+            color: #ffffff;
+            width: 20%;
+            border-radius: 20px;
+            background-color: #3B82F6;
+        }
+        .block2 > img {
+            width: 500px; 
+            border-radius: 30px;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: #111827;
+            color: #ffffff;
+            padding: 3%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        footer > .bl2 > ul > li {
+            list-style: none;
+            padding-top: 1em;
+            margin-left: auto;
+        }
+        footer > .bl2 > ul > li > a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        footer > .bl2 > ul  {
+            margin: 0;
+            padding: 0;
+        }
+        .footer_bottom {
+             background-color: #111827;
+            color: #ffffff;
+            padding: 2%;
+            text-align: center;
+        }
+        .footer_bottom > p {
+            padding-top: 2%;
+        }
+        .footer_bottom hr {
+            border: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #3B82F6, #ffffff, #3B82F6, transparent);
+        }
+        .main_content {
+            text-align: center;
+        }
+        .mainblock ul {
+            margin: 0;
+            padding: 0;
+        }
+        .mainblock li {
+            list-style: none;
+            padding-top: 4%;
+        }
+        .im h1 {
+            color: #ffffff;
+        }
+        .an .text2 {
+            margin-top: 4%;
+            text-align: left;
+            background-color: #3B82F6;
+            padding: 2em;
+            color: #ffffff;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+        .an {
+            text-align: center;
+            margin: 2% auto 2% auto ;
+            width: 40%;
+        }
+        @media (max-width: 768px) {
+    .mainblock {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+button {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 2%;
+    cursor: pointer;
+    border: 2px solid #111827;
+    border-radius: 20px;
+}
+button:hover {
+    background-color: #111827;
+}
+    </style>
+</head>
 <body>
     <header>
+        <h1>Название проекта</h1>
         <nav>
             <ul>
-                <li><a href="#">О проекте</a></li>
-                <li><a href="#">Участники</a></li>
-                <li><a href="#">Журнал</a></li>
-                <li><a href="#">Ресурсы</a></li>
+                <li id="main"><a href="#">Главная</a></li>
+                <li id="project"><a href="file:///C:/Users/saval/Desktop/Project/About.html">О проекте</a></li>
+                <li id="partic"><a href="#">Участники</a></li>
+                <li id="journal"><a href="#">Журнал</a></li>
+                <li id="resources"><a href="#">Ресурсы</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-
+    <section class="content">
+        <article>
+            <div class="im">
+                <h1>Название проекта</h1>
+                <p>Проект посвящён созданию 2D-платформера на языке C++ с использованием библиотеки GameLib.h. В рамках работы был разработан игровой цикл, система управления персонажем, гравитация, прыжки, обнаружение столкновений и сбор предметов. Ключевой особенностью является модификация — система временных бонусов (ускорение), усложняющая геймплей. 
+                    Проект сопровождается техническим руководством, видео-демонстрацией и размещён в открытом Git-репозитории.</p>
+                    <button onclick="location.href='file:///C:/Users/saval/Desktop/Project/About.html'", type="submit">Подробнее</button>
+            </div>
+            <div class="block2">
+                <img src="images/photo.png" alt="Изображение">
+            </div>
+        </article>
+        <div class="an">
+            <h1>Цель</h1>
+            <div class="text2"><p>Разработать 2D-игру на языке C++ с собственным игровым движком, реализующую базовые механики: управление персонажем, физику прыжков, сбор предметов и систему коллизий.
+</p></div>
+            
+        </div>
+        <div class="main_content">
+            <h2>Ключевые задачи</h2>
+            <div class="mainblock">
+            <div class="block">
+                <h3>Основа и движок</h3>
+                <ul>
+                    <li>Установить графическую библиотеку (GameLib.h / Raylib), создать окно и настроить игровой цикл (60 FPS)</li>
+                    <li>Реализовать класс Player с движением по стрелкам/WASD и прыжком по пробелу</li>
+                    <li>Добавить гравитацию и систему коллизий (столкновение с платформами)</li>
+                </ul>
+            </div>
+            <div class="block"><h3>Игровой мир и механики</h3>
+                <ul>
+                    <li>Создать класс Platform для платформ и разместить их на сцене</li>
+                    <li>Создать класс Item (монеты/звёзды) с возможностью сбора и увеличением счёта</li>
+                    <li>Добавить отображение счёта на экране и звуковой эффект при сборе предмета</li>
+                </ul></div>
+            <div class="block"><h3>Модификация и завершение</h3>
+                <ul>
+                    <li>Реализовать модификацию (бонусы: ускорение / неуязвимость / увеличение размера — на выбор)</li>
+                    <li>Оформить техническую документацию (Markdown) и подготовить HTML-версию для сайта</li>
+                    <li>Записать видео-презентацию (цель, задачи, демонстрация работы, показ модификации)</li>
+                </ul></div>
+        </div>
+        </div>
     </section>
     <footer>
-
+        <div class="bl1">
+            <h3>Проектная практика</h3>
+            <p>Совместная практика, направленная на практическое обучение</p>
+        </div>
+        <div class="bl2">
+            <h3>Быстрый доступ</h3>
+            <ul>
+                <li id="main"><a href="#">Главная</a></li>
+                <li id="project"><a href="file:///C:/Users/saval/Desktop/Project/About.html">О проекте</a></li>
+                <li id="partic"><a href="#">Участники</a></li>
+                <li id="journal"><a href="#">Журнал</a></li>
+                <li id="resources"><a href="#">Ресурсы</a></li>
+            </ul>
+        </div>
+        <div class="bl3">
+            <h3>Контакты</h3>
+            <p>Email: XXXXXX@gmail.com</p>
+            <p>Телефон: +7XXXXXXX</p>
+        </div>
     </footer>
+    <div class="footer_bottom">
+        <hr>
+        <p>&copy; 2026 Проектная практика. Все права защищены.</p>
+    </div>
 </body>
-
+</html>
