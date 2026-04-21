@@ -1,0 +1,377 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Филин</title>
+    <link rel="icon" type="image/x-icon" href="Images/logo.png">
+    <style type='text/css'>
+        
+        body {
+            width: 100%;
+            margin: 0 auto;
+        }
+        header > nav > ul > li > a {
+            text-decoration: none;
+            color: #111827;
+        }
+        header > nav > ul > li {
+            list-style: none;
+            display: inline;
+            padding: 1em;
+            font-size: 140%;
+        }
+        header {
+            align-items: center;
+            display: flex;
+            padding: 2%;
+            background-color: #ffffff;
+            justify-content: space-between;
+        }
+        nav {
+            padding-left: 25%;
+        }
+        header > nav > ul > li > a:hover {
+            color: #21ADFC;
+        }
+        #partic > a {
+            color: #21ADFC;
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+        }
+        .logom {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: #111827;
+            color: #ffffff;
+            padding: 3%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        footer > .bl2 > ul > li {
+            list-style: none;
+            padding-top: 1em;
+            margin-left: auto;
+        }
+        footer > .bl2 > ul > li > a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        footer > .bl2 > ul  {
+            margin: 0;
+            padding: 0;
+        }
+        .footer_bottom {
+             background-color: #111827;
+            color: #ffffff;
+            padding: 2%;
+            text-align: center;
+        }
+        .footer_bottom > p {
+            padding-top: 2%;
+        }
+        .footer_bottom hr {
+            border: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #21ADFC, #ffffff, #21ADFC, transparent);
+        }
+        section > .p {
+            text-align: center;
+        }
+        section > h2 {
+            padding-left: 2em;
+        }
+        article  {
+            padding: 2em;
+            margin: 1em;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .card {
+            width: 25%;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            padding: 1em;
+            border: 2px solid #111827;
+            border-radius: 10px;
+        }
+        .card li {
+            padding-top: 0.5em;
+        }
+        .card {
+    transition: transform 0.3s, box-shadow 0.3s;  /* ← плавность анимации */
+}
+.card:hover {
+    transform: translateY(-5px);  /* ← подъём на 5px вверх */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);  /* ← тень для объёма */
+}
+.ava {
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 40px;
+    margin-right: 1em;
+    background-color: #21ADFC;
+    color: #ffffff
+}
+.d_card {
+    margin: 1em;
+    padding: 2em;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.card_p {
+    padding: 1em;
+            border: 2px solid #111827;
+            border-radius: 10px;
+            width: 20%;
+}
+.card_not li {
+    list-style: numeric;
+}
+.card_not {
+    border: 2px solid #111827;
+            border-radius: 10px;
+            padding: 1em;
+            margin: 3em;
+            width: 30%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logom">
+        <img src="Images/logo.png" />
+        <h1>Филин</h1>
+        </div>
+        <nav>
+            <ul>
+                <li id="main"><a href="file:///C:/Users/saval/Desktop/Project/index.html">Главная</a></li>
+                <li id="project"><a href="file:///C:/Users/saval/Desktop/Project/About.html">О проекте</a></li>
+                <li id="partic"><a href="#">Участники</a></li>
+                <li id="journal"><a href="file:///C:/Users/saval/Desktop/Project/journal.html">Журнал</a></li>
+                <li id="resources"><a href="#">Ресурсы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <h2 class="p">Участники проекта</h2>
+        <h2>Активные участники:</h2>
+        <article>
+            <div class="card">
+                <div>
+                    <h2># 1</h2>
+                <p>Варданян Людвиг Левонович</p>
+                <p>Роль: <b>Teamlead</b></p>
+                <p>Вклад:</p>
+                <ul>
+                    <li>Организовал процесс</li>
+                    <li>Сделал устав проекта</li>
+                </ul>
+                </div>
+                <div class="ava">
+                    <h2>ВЛ</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h2># 2</h2>
+                <p>Зверев Савелий Максимович</p>
+                <p>Роль: <b>Заместитель Teamlead</b></p>
+                <p>Вклад:</p>
+                <ul>
+                    <li>Работал над дизайном проекта</li>
+                    <li>Написал 55% кода</li>
+                </ul>
+                </div>
+                <div class="ava">
+                    <h2>ЗС</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h2># 3</h2>
+                <p>Суворова Мария Романовна</p>
+                <p>Роль: <b>Разработчик и дизайнер</b></p>
+                <p>Вклад:</p>
+                <ul>
+                    <li>Работала над дизайном проекта</li>
+                    <li>Написала 28% кода</li>
+                </ul>
+                </div>
+                <div class="ava">
+                    <h2>СМ</h2>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h2># 4</h2>
+                <p>Мягкая Виктория Сергеевна</p>
+                <p>Роль: <b>Разработчик</b></p>
+                <p>Вклад:</p>
+                <ul>
+                    <li>Работала над прототипом проекта</li>
+                    <li>Написала 17% кода</li>
+                </ul>
+                </div>
+                <div class="ava">
+                    <h2>МВ</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h2># 5</h2>
+                <p>Рыбакова Елена Андреевна</p>
+                <p>Роль: <b>Дизайнер</b></p>
+                <p>Вклад:</p>
+                <ul>
+                    <li>Создала логотип проекта</li>
+                    <li>Работала над прототипом</li>
+                    <li>Доработала и сделала опрос</li>
+                </ul>
+                </div>
+                <div class="ava">
+                    <h2>РЕ</h2>
+                </div>
+            </div>
+
+        </article>
+        <h2>Другие участники:</h2>
+        <div class="d_card">
+            
+             
+            <div class="card_p">
+                <div>
+                    <h3># 1</h3>
+                <p>Лебедев Александр Андреевич</p>
+                <p>Роль: <b>Редактор</b></p>
+                <p>Вклад:</p>
+                <ul>
+                    <li>Работал над презентацией</li>
+                    <li>Сделал пояснительную записку</li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="card_p">
+                <div>
+                    <h3># 2</h3>
+                <p>Гусев Данила Павлович</p>
+                <p>Роль: <b>Редактор</b></p>
+                <p>Вклад:</p>
+                <ul>
+                    <li>Написал начальный устав проекта</li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="card_p">
+                <div>
+                    <h3># 3</h3>
+                <p>Грызунов Владимир Алексеевич</p>
+                <p>Роль: <b>Редактор</b></p>
+                <p>Вклад:</p>
+                <ul>
+                    <li>Предоставил инструкцию</li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="card_p">
+                <div>
+                    <h3># 4</h3>
+                <p>Горохов Егор Алексеевич</p>
+                <p>Роль: <b>Редактор</b></p>
+                <p>Вклад:</p>
+                <ul>
+                    <li>Доработал и сделал презентацию</li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="card_p">
+                <div>
+                    <h3># 5</h3>
+                <p>Кудрявцев Владислав Александрович</p>
+                <p>Роль: <b>Аналитик</b></p>
+                <p>Вклад:</p>
+                <ul>
+                    <li>Поиск и анализ подобных приложений</li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="card_p">
+                <div>
+                    <h3># 6</h3>
+                <p>Мирзоахмедов Сардорбег Содикжонович</p>
+                <p>Роль: <b>Редактор</b></p>
+                <p>Вклад:</p>
+                <ul>
+                    <li>Сделал начальный опрос</li>
+                </ul>
+                </div>
+            </div>
+
+        </div>
+        <h2>Участники, не принимавшие участие в проекте</h2>
+        <div class="card_not">
+            <ul>
+                <li>Алдаев Глеб Алексеевич</li>
+                <li>Антошин Илья Владиславович</li>
+                <li>Забелин Александр Евгеньевич</li>
+                <li>Мигунов Назар Дмитриевич</li>
+                <li>Овсянникова Арина Игоревна</li>
+                <li>Одинабеков Арсентий Денисович</li>
+                <li>Патаев Игорь Андреевич</li>
+                <li>Петров Иван Анатольевич</li>
+                <li>Рахматуллаев Рахматулло Абдулхамид угли</li>
+                <li>Рахмонов Сино Рустамович</li>
+                <li>Сагидуллин Роберт Айратович</li>
+                <li>Судин Михаил Андреевич</li>
+                <li>Темурджонов Хуршеджон Джамшедович</li>
+                <li>Чулков Александр Романович</li>
+                <li>Чуфистов Николай Игоревич</li>
+                <li>Эгамбердиев Исломджон Кахрамонович</li>
+                <li>Эркинов Камронбек Давронбек угли</li>
+                <li>Юлчиев Низомиддин Имомбой угли</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="bl1">
+            <h3>Филин</h3>
+            <p>Сервис для подбора научного руководителя ВКР и проектов</p>
+        </div>
+        <div class="bl2">
+            <h3>Быстрый доступ</h3>
+            <ul>
+                <li id="main"><a href="file:///C:/Users/saval/Desktop/Project/index.html">Главная</a></li>
+                <li id="project"><a href="file:///C:/Users/saval/Desktop/Project/About.html">О проекте</a></li>
+                <li id="partic"><a href="#">Участники</a></li>
+                <li id="journal"><a href="file:///C:/Users/saval/Desktop/Project/journal.html">Журнал</a></li>
+                <li id="resources"><a href="#">Ресурсы</a></li>
+            </ul>
+        </div>
+        <div class="bl3">
+            <h3>Контакты</h3>
+            <p>Email: XXXXXX@gmail.com</p>
+            <p>Телефон: +7XXXXXXX</p>
+        </div>
+    </footer>
+    <div class="footer_bottom">
+        <hr>
+        <p>&copy; 2026 Филин. Все права защищены.</p>
+    </div>
+</body>
+</html>
