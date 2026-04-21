@@ -1,0 +1,205 @@
+<html>
+<head>
+    <title>Филин</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="Images/logo.png">
+    <style type='text/css'>
+        
+        body {
+            width: 100%;
+            margin: 0 auto;
+        }
+        header > nav > ul > li > a {
+            text-decoration: none;
+            color: #111827;
+        }
+        header > nav > ul > li {
+            list-style: none;
+            display: inline;
+            padding: 1em;
+            font-size: 140%;
+        }
+        header {
+            align-items: center;
+            display: flex;
+            padding: 2%;
+            background-color: #ffffff;
+            justify-content: space-between;
+        }
+        nav {
+            padding-left: 25%;
+        }
+        header > nav > ul > li > a:hover {
+            color: #21ADFC;
+        }
+        #journal > a {
+            color: #21ADFC;
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+        }
+        .logom {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: #111827;
+            color: #ffffff;
+            padding: 3%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        footer > .bl2 > ul > li {
+            list-style: none;
+            padding-top: 1em;
+            margin-left: auto;
+        }
+        footer > .bl2 > ul > li > a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        footer > .bl2 > ul  {
+            margin: 0;
+            padding: 0;
+        }
+        .footer_bottom {
+             background-color: #111827;
+            color: #ffffff;
+            padding: 2%;
+            text-align: center;
+        }
+        .footer_bottom > p {
+            padding-top: 2%;
+        }
+        .footer_bottom hr {
+            border: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #21ADFC, #ffffff, #21ADFC, transparent);
+        }
+        article {
+             margin: 2% auto 2% auto;
+             width: 70%;
+             display: flex;
+             gap: 20px;
+             text-align: left;
+             flex-direction: column;
+        }
+        .blockj {
+            color: #ffffff;
+            background-color: #21ADFC;
+            display: flex;
+            border-radius: 20px;
+            align-items: stretch;
+        }
+        .textj {
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .blockj img {
+            width: 200px;
+            border-radius: 20px 0 0 20px;
+        }
+        .cal_hd {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logom">
+        <img src="Images/logo.png" />
+        <h1>Филин</h1>
+        </div>
+        <nav>
+            <ul>
+                <li id="main"><a href="file:///C:/Users/saval/Desktop/Project/index.html">Главная</a></li>
+                <li id="project"><a href="file:///C:/Users/saval/Desktop/Project/About.html">О проекте</a></li>
+                <li id="partic"><a href="file:///C:/Users/saval/Desktop/Project/partic.html#">Участники</a></li>
+                <li id="journal"><a href="#">Журнал</a></li>
+                <li id="resources"><a href="#">Ресурсы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <article>
+            <div class="blockj">
+                <img src="Images/flat-lay-colorful-thread-arrangement.jpg" />
+                <div class="textj">
+                <div class="cal_hd">
+                <i class="fas fa-calendar"></i>
+                <p>2 апреля, 2026</p>
+                    </div>
+                <p>Ежегодно более 3000 студентов Московского Политеха выбирают темы ВКР и проектов. Отсутствие цифрового инструмента для поиска научного руководителя создает хаос, перегрузку преподавателей и потерю времени. Назрела необходимость в едином прозрачном сервисе.</p>
+                </div>
+            </div>
+            </div>
+            <div class="blockj">
+                <img src="Images/Разработка.png" />
+                <div class="textj">
+                    <div class="cal_hd">
+                <i class="fas fa-calendar"></i>
+                <p>24 марта, 2026</p>
+                    </div>
+                <p><h3>Начало разработки (Flutter)</h3>
+                    Разработка первых ключевых экранов на Flutter
+Старт программирования: на фреймворке Flutter были сверстаны и «оживлены» основные экраны приложения. В первую очередь реализовали авторизацию (для студентов и преподавателей), главную ленту с карточками и базовый модуль поиска. Мы заложили единую базу данных преподавателей, чтобы на следующих этапах оперативно подключить фильтрацию по научным интересам и отслеживание текущей нагрузки. Приложение уже обрело работающую навигацию между первыми вкладками.</p>
+                </div>
+            </div>
+            <div class="blockj">
+                <img src="Images/prototype.png" />
+                <div class="textj">
+                <div class="cal_hd">
+                <i class="fas fa-calendar"></i>
+                <p>14 марта, 2026</p>
+                    </div>
+                <p><h3>Создание полноценного дизайн-макета приложения</h3>
+                    Опираясь на утвержденные WireFrames, мы перешли к визуальному наполнению. Был разработан чистый и функциональный дизайн, соответствующий стандартам Московского Политеха. Основное внимание уделили карточкам профилей преподавателей (с указанием занятости и научных интересов), визуализации фильтров по факультетам и формату работы, а также понятному интерфейсу для системы отзывов и рейтинга. В результате мы получили интерактивный прототип, готовый к передаче в разработку.</p>
+                </div>
+            </div>
+            <div class="blockj">
+                <img src="Images/WireFrames.png" />
+                <div class="textj">
+                <div class="cal_hd">
+                <i class="fas fa-calendar"></i>
+                <p>7 марта, 2026</p>
+                    </div>
+                <p><h3>Разработка WireFrames в Figma</h3>
+                    На начальном этапе мы сосредоточились на архитектуре будущего приложения и пользовательских сценариях. В Figma была создана полная структура WireFrames (черновых макетов) без визуального оформления. Это позволило нам протестировать логику переходов между экранами: от ленты преподавателей и фильтров до формы подачи заявки и встроенного чата. Такой подход помог выявить узкие места интерфейса на ранней стадии и заложить основу для удобного поиска научного руководителя.</p>
+                </div>
+        </article>
+    </section>
+    <footer>
+        <div class="bl1">
+            <h3>Филин</h3>
+            <p>Сервис для подбора научного руководителя ВКР и проектов</p>
+        </div>
+        <div class="bl2">
+            <h3>Быстрый доступ</h3>
+            <ul>
+                <li id="main"><a href="file:///C:/Users/saval/Desktop/Project/index.html">Главная</a></li>
+                <li id="project"><a href="file:///C:/Users/saval/Desktop/Project/About.html">О проекте</a></li>
+                <li id="partic"><a href="file:///C:/Users/saval/Desktop/Project/partic.html#">Участники</a></li>
+                <li id="journal"><a href="#">Журнал</a></li>
+                <li id="resources"><a href="#">Ресурсы</a></li>
+            </ul>
+        </div>
+        <div class="bl3">
+            <h3>Контакты</h3>
+            <p>Email: XXXXXX@gmail.com</p>
+            <p>Телефон: +7XXXXXXX</p>
+        </div>
+    </footer>
+    <div class="footer_bottom">
+        <hr>
+        <p>&copy; 2026 Филин. Все права защищены.</p>
+    </div>
+</body>
+</html>
