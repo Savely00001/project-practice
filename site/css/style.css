@@ -1,10 +1,12 @@
-body {
+ /* ========== Общие стили ========== */
+ body {
             width: 100%;
             margin: 0 auto;
         }
         header > nav > ul > li > a {
             text-decoration: none;
             color: #111827;
+            padding: 0.5em;
         }
         header > nav > ul > li {
             list-style: none;
@@ -15,18 +17,23 @@ body {
         header {
             align-items: center;
             display: flex;
-            padding: 2%;
+            padding-left: 1em;
+            padding-right: 1em;
             background-color: #ffffff;
             justify-content: space-between;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
         nav {
             padding-left: 25%;
         }
-        header > nav > ul > li > a:hover {
-            color: #21ADFC;
-        }
-        #main > a {
-            color: #21ADFC;
+header > nav > ul > li > a:hover {
+    color: #5E473D;
+}
+        .active > a {
+            
+            background-color: #f5f2f0;
+            border-radius: 10px;
+            color: #5E473D;
         }
         header img {
             width: 50px;
@@ -37,43 +44,10 @@ body {
             align-items: center;
             gap: 15px;
         }
-        article {
-            display: flex;
-            gap: 20px;
-            justify-content: space-between;  
-            align-items: center;
-            padding: 2% 10%;
-            text-align: left;
-            background-color: #21ADFC;
-        }
-        article > .im > p {
-            font-size: 20px;
-            color: #ffffff;
-        }
-        .mainblock {
-            padding-top: 2%;
-            padding-bottom: 5%;
-            display: flex;
-            gap: 100px;
-            flex-direction: row;
-            justify-content: center;
-        }
-        .block {
-            padding: 2em;
-            text-align: left;
-            color: #ffffff;
-            width: 20%;
-            border-radius: 20px;
-            background-color: #21ADFC;
-        }
-        .block2 > img {
-            width: 200px; 
-            border-radius: 30px;
-        }
         footer {
             display: flex;
             justify-content: space-between;
-            background-color: #111827;
+            background-color: #000000;
             color: #ffffff;
             padding: 3%;
             padding-left: 5%;
@@ -93,7 +67,7 @@ body {
             padding: 0;
         }
         .footer_bottom {
-             background-color: #111827;
+             background-color: #000000;
             color: #ffffff;
             padding: 2%;
             text-align: center;
@@ -104,7 +78,44 @@ body {
         .footer_bottom hr {
             border: 0;
             height: 2px;
-            background: linear-gradient(90deg, transparent, #21ADFC, #ffffff, #21ADFC, transparent);
+            background: linear-gradient(90deg, transparent, #E0A757, #ffffff, #E0A757, transparent);
+        }
+        footer > .bl2 > ul > li.active2 > a {
+    color: #E0A757;
+}
+        /* ========== Стили для index ========== */
+        #contentix {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;  
+            align-items: center;
+            padding: 2% 10%;
+            text-align: left;
+            background-color: #5E473D;
+        }
+        #contentix > .im > p {
+            font-size: 20px;
+            color: #ffffff;
+        }
+        .mainblock {
+            padding-top: 2%;
+            padding-bottom: 5%;
+            display: flex;
+            gap: 100px;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .block {
+            padding: 2em;
+            text-align: left;
+            color: #5E473D;
+            width: 20%;
+            border-radius: 20px;
+            background-color: #f5f2f0;
+        }
+        .block2 > img {
+            width: 200px; 
+            border-radius: 30px;
         }
         .main_content {
             text-align: center;
@@ -123,9 +134,9 @@ body {
         .an .text2 {
             margin-top: 4%;
             text-align: left;
-            background-color: #21ADFC;
+            background-color: #f5f2f0;
             padding: 2em;
-            color: #ffffff;
+            color: #5E473D;
             border-radius: 20px;
             font-size: 20px;
         }
@@ -149,12 +160,157 @@ button {
     color: #ffffff;
     font-size: 20px;
     cursor: pointer;
-    border: 2px solid #111827;
+    border: 2px solid #000000;
     border-radius: 20px;
 }
 button:hover {
-    background-color: #111827;
+    background-color: #000000;
 }
 .block > i {
-    color: #ffffff;
+    color: #5E473D;
 }
+/* ========== Стили для journal ========== */
+#contentj {
+             margin: 2% auto 2% auto;
+             width: 70%;
+             display: flex;
+             gap: 20px;
+             text-align: left;
+             flex-direction: column;
+        }
+        .blockj {
+            color: #ffffff;
+            background-color: #5E473D;
+            display: flex;
+            border-radius: 20px;
+            align-items: stretch;
+        }
+        .textj {
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .blockj img {
+            width: 200px;
+            border-radius: 20px 0 0 20px;
+        }
+        .cal_hd {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+/* ========== Стили для partic ========== */
+ .contentpc > .p {
+            text-align: center;
+        }
+        .contentpc > h2 {
+            padding-left: 2em;
+        }
+        #contentp  {
+            padding: 2em;
+            margin: 1em;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .card {
+            color: #5E473D;
+            background-color: #f5f2f0;
+            width: 25%;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            padding: 1em;
+            border: 2px solid #5E473D;
+            border-radius: 10px;
+        }
+        .card li {
+            padding-top: 0.5em;
+        }
+        .card {
+    transition: transform 0.3s, box-shadow 0.3s;  /* ← плавность анимации */
+}
+.card:hover {
+    transform: translateY(-5px);  /* ← подъём на 5px вверх */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);  /* ← тень для объёма */
+}
+.ava {
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 40px;
+    margin-right: 1em;
+    background-color: #E0A757;
+    color: #ffffff
+}
+.d_card {
+    margin: 1em;
+    padding: 2em;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.card_p {
+   color: #5E473D;
+            background-color: #f5f2f0;
+    padding: 1em;
+            border: 2px solid #5E473D;
+            border-radius: 10px;
+            width: 20%;
+}
+.card_not li {
+    list-style: numeric;
+}
+.card_not {
+    color: #5E473D;
+            background-color: #f5f2f0;
+    border: 2px solid #5E473D;
+            border-radius: 10px;
+            padding: 1em;
+            margin: 3em;
+            width: 30%;
+}
+/* ========== Стили для about ========== */      
+.t {
+            text-align: center;
+        }
+        #contentab {
+            color: #ffffff;
+             width: 80%;
+             padding: 2.5%;
+            margin: 2% auto 2% auto ;
+             background-color: #5E473D;
+             border-radius: 25px;
+             font-size: 18px;
+        }
+        .mblock li {
+            list-style: numeric;
+            padding-top: 0.5em;
+        }
+        .mblock {
+            display: flex;
+            justify-content: space-between;
+        }
+        .mblock img {
+            width: 400px;
+            border-radius: 20px;
+        }
+        .line {
+            border: 0;
+            height: 2px;
+            background: #ffffff;
+        }
+ /* ========== Стили для resources ========== */
+ #contentrs {
+    padding-left: 2em;
+    padding-top: 1em;
+}
+#contentrs > a {
+    color: #5E473D;
+    font-size: 18px;
+    display: block;
+    width: fit-content;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
