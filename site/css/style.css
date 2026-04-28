@@ -1,4 +1,4 @@
- /* ========== Общие стили ========== */
+  /* ========== Общие стили ========== */
  body {
             width: 100%;
             margin: 0 auto;
@@ -309,7 +309,7 @@ button:hover {
     font-size: 18px;
     display: block;
     width: fit-content;
-    padding-bottom: 1em;
-    padding-top: 1em;
+    margin-bottom: 1em;
+    margin-top: 2em;
 }
 
