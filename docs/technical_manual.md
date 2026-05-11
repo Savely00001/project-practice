@@ -11,7 +11,7 @@
 
 ## 1.1. Шаг 1: Создание игрового окна и цикла
 
-```
+```Python
 import pygame
 import sys
 
