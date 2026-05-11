@@ -10,6 +10,7 @@
 что вы уже знакомы с основами Python и установили Pygame (pip install pygame в cmd от имени администратора).
 
 ## 1.1. Шаг 1: Создание игрового окна и цикла
+```Python
 import pygame
 import sys
 
